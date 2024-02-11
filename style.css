@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap');
+
+*, :root {
+  font-family: 'signika', sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  
+body {
+    background-image: linear-gradient(#191919, #27282d);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.music-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #131313;
+    border-radius: 50px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%; /* Ajuste para 90% da largura da tela */
+    max-width: 600px; /* Largura máxima de 600px */
+  } 
+  
+.container-aplicativo {
+    width: 100%; /* Ajuste para 100% da largura do contêiner pai */
+    max-width: 600px; /* Largura máxima de 600px */
+    height: auto; /* Altura automática */
+    border: 1px solid #ccc; /* Borda do bloco */
+    border-radius: 10px; /* Arredonda as bordas */
+    padding: 20px; /* Espaçamento interno */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+
+button {
+    background-color: inherit;
+    color: inherit;
+    border: none;
+    cursor: pointer;
+}
+  
+#cover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    width: 100%;
+    box-shadow: 10px 0px 10px 5px #191919 0.3;
+    border-radius: 20px;
+}
+
+ #track-info {
+    margin: 1rem 10rem 1rem 1rem;
+    font-size: 1.0rem;
+  } 
+
+#capitulo{
+    color: antiquewhite;
+}
+  
+#nome-autor{
+    color: #868686;
+}
+  
+#anterior, #proximo {
+    font-size: 3rem;
+    color: antiquewhite;
+}
+
+#anterior{
+    margin-right: 1rem;
+}
+
+#proximo{
+    margin-left: 1rem;
+}
+  
+#play-pause {
+    font-size: 3rem;
+    color: antiquewhite;
+}
+  
+#container-botoes {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
