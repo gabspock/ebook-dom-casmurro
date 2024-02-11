@@ -35,7 +35,7 @@ function capituloAnterior (){
         capitulo = quantidadeCapitulos;
     } else {
         capitulo -= 1;
-    audio.src = "/books/dom-casmurro/" + capitulo + ".mp3";  
+    audio.src = "books/dom-casmurro/" + capitulo + ".mp3";  
     const nomeCapitulo = document.getElementById("capitulo");
     nomeCapitulo.innerText = "Capítulo " + capitulo;
     tocarFaixa();
@@ -48,7 +48,7 @@ function proximoCapitulo(){
     } else {
         capitulo = 1;
     }
-    audio.src = "/books/dom-casmurro/" + capitulo + ".mp3";
+    audio.src = "books/dom-casmurro/" + capitulo + ".mp3";
     nomeCapitulo.innerText = "Capítulo " + capitulo;
     tocarFaixa();
 }
