@@ -31,10 +31,11 @@ function pausarFaixa() {
     } else {
         if (audio.paused) {
             tocarFaixa();
-        } else 
+        } else {
             pausarFaixa();
         }
     }
+}
 
 
 function capituloAnterior (){
@@ -42,10 +43,8 @@ function capituloAnterior (){
         capitulo = quantidadeCapitulos;
     } else {
         capitulo -= 1;
-    audio.src = "/books/dom-casmurro/" + capitulo + ".mp3";
-    const nomeCapitulo = document.getElementById("capitulo");
     nomeCapitulo.innerText = "Capítulo " + capitulo;
-    tocarFaixa();
+    carregarFaixa();
     }
 }
 
@@ -55,9 +54,14 @@ function proximoCapitulo(){
     } else {
         capitulo = 1;
     }
-    audio.src = "/books/dom-casmurro/" + capitulo + ".mp3";
     nomeCapitulo.innerText = "Capítulo " + capitulo;
-    tocarFaixa();
+    carregarFaixa();
+}
+
+function carregarFaixa() {
+    audio.src = "books/dom-casmurro/" + capitulo + ".mp3";
+    nomeCapitulo.innerText = "Capítulo " + capitulo;
+    tocarFaixa(); 
 }
 
 botaoPlayPause.addEventListener("click", tocarOuPausarFaixa);
