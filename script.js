@@ -35,7 +35,6 @@ function pausarFaixa() {
             pausarFaixa();
         }
     }
-}
 
 
 function capituloAnterior (){
